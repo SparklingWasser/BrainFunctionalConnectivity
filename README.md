@@ -26,4 +26,3 @@ Intelligent Neuroengineering (i-neuro) Lab., Department of Electronic Engineerin
 Reference: Stam, C. J., Nolte, G., & Daffertshofer, A. (2007). Phase lag index: assessment of functional connectivity from multi channel EEG and MEG with diminished bias from common sources. Human brain mapping, 28(11), 1178-1193. 
 
 Copyright (C) 2022 Seonghun Park (s.park7532@gmail.com) and Miseon Shim (shim.miseon@gmail.com)
-
