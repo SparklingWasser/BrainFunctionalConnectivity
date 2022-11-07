@@ -1,7 +1,7 @@
 # Brain Functional Connectivity
 
 This function is to compute functional connectivity between two
-time-series signals, especially for the data without header files that
+time-series signals (e.g., EEG), especially for the data without header files that
 are typically needed in Fieldtrip or SIFT in EEGLAB toolboxes.
 
 Usage:
