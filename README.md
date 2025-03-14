@@ -21,10 +21,10 @@ Example:<br/>
    >> ImagC = Connectivity.ImagC(x1, x2);<br/>
 
 Authors: Seonghun Park (Ph.D.) and Miseon Shim (Ph.D.)<br/>
-Intelligent Neuroengineering (i-neuro) Lab., Department of Electronic Engineering, Korea University
-
-References <br/>
-Stam, C. J., Nolte, G., & Daffertshofer, A. (2007). Phase lag index: assessment of functional connectivity from multi channel EEG and MEG with diminished bias from common sources. Human brain mapping, 28(11), 1178-1193. <br/>
-Bastos, A. M., & Schoffelen, J. M. (2016). A tutorial review of functional connectivity analysis methods and their interpretational pitfalls. Frontiers in systems neuroscience, 9, 175.
-
+Intelligent Neuroengineering (i-neuro) Lab., Department of Electronic Engineering, Korea University <br/>  <br/>
 Copyright (C) 2022 Seonghun Park (s.park7532@gmail.com) and Miseon Shim (shim.miseon@gmail.com)
+
+# References <br/>
+1. Stam, C. J., Nolte, G., & Daffertshofer, A. (2007). Phase lag index: assessment of functional connectivity from multi channel EEG and MEG with diminished bias from common sources. Human brain mapping, 28(11), 1178-1193. <br/>
+2. Bastos, A. M., & Schoffelen, J. M. (2016). A tutorial review of functional connectivity analysis methods and their interpretational pitfalls. Frontiers in systems neuroscience, 9, 175.
+
