@@ -32,26 +32,27 @@ classdef Connectivity
     methods(Static)
         % Phase locking value
         function output = PLV(x1, x2)
-            phase_diff = angle(hilbert(x1).*conj(hilbert(x2)));
+            phase_diff = angle(hilbert(x1)) - angle(hilbert(x2));
             output = abs(mean(exp(1i*phase_diff)));
         end
 
         % Phase lag index
         function output = PLI(x1, x2)
-            phase_diff = angle(hilbert(x1).*conj(hilbert(x2)));
+            phase_diff = angle(hilbert(x1)) - angle(hilbert(x2));
             output = abs(mean(sign(phase_diff)));
         end
 
-        % Phase coherency
+        % Complex coherency
         function output = Cohy(x1, x2)
             y1 = hilbert(x1);
             y2 = hilbert(x2);
-            num = mean(y1.*conj(y2));
-            denom = sqrt(mean(abs(y1).^2)*mean(abs(y2).^2));
+            phase_diff = angle(y1) - angle(y2);
+            num = abs(mean(abs(y1).*abs(y2).*exp(1i*phase_diff)));
+            denom = sqrt(abs(mean(abs(y1).^2))*abs(mean(abs(y2).^2)));
             output = num/denom;
         end
 
-        % Phase coherence
+        % Coherence
         function output = Cohe(x1, x2)
             output = abs(Cohy(x1, x2));
         end
@@ -60,8 +61,9 @@ classdef Connectivity
         function output = ImagC(x1, x2)
             y1 = hilbert(x1);
             y2 = hilbert(x2);
-            num = mean(imag(y1.*conj(y2)));
-            denom = sqrt(mean(abs(y1).^2)*mean(abs(y2).^2));
+            phase_diff = angle(y1) - angle(y2);
+            num = abs(mean(abs(y1).*abs(y2).*sin(phase_diff)));
+            denom = sqrt(abs(mean(abs(y1).^2))*abs(mean(abs(y2).^2)));
             output = num/denom;
         end
 
@@ -70,3 +72,4 @@ classdef Connectivity
         end
     end
 end
+
